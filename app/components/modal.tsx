@@ -2,7 +2,7 @@
 
 import { Dialog } from '@base-ui/react'
 import { useParams, useRouter } from 'next/navigation'
-import { useCallback } from 'react'
+import { startTransition, useCallback, ViewTransition } from 'react'
 import { DocSheetChrome } from './doc-sheet-chrome'
 
 type Labels = {
@@ -12,7 +12,10 @@ type Labels = {
   escHint: string
 }
 
+type DocSlug = 'curriculum-vitae' | 'skill-profile' | 'imprint' | 'privacy'
+
 export function DocSheetModal({
+  slug,
   title,
   subtitle,
   contact,
@@ -20,6 +23,7 @@ export function DocSheetModal({
   labels,
   children,
 }: {
+  slug: DocSlug
   title: string
   subtitle: string
   contact: readonly string[]
@@ -33,14 +37,20 @@ export function DocSheetModal({
   const handleOpenChange = useCallback(
     (open: boolean) => {
       if (open) return
+      const morphFrom = sessionStorage.getItem('doc-morph-from')
+      sessionStorage.removeItem('doc-morph-from')
       const idx = (window.history.state as { idx?: number } | null)?.idx
-      if (typeof idx === 'number' && idx > 0) {
+      if (morphFrom === slug) {
+        startTransition(() => {
+          router.push(`/${lang}`)
+        })
+      } else if (typeof idx === 'number' && idx > 0) {
         router.back()
       } else {
         router.push(`/${lang}`)
       }
     },
-    [router, lang],
+    [router, lang, slug],
   )
 
   return (
@@ -58,33 +68,36 @@ export function DocSheetModal({
             ×
           </Dialog.Close>
 
-          <DocSheetChrome
-            title={title}
-            subtitle={subtitle}
-            contact={contact}
-            actions={
-              <>
-                <button
-                  type="button"
-                  onClick={() => window.print()}
-                  className="bg-none border-0 p-0 font-inherit cursor-pointer uppercase tracking-[0.14em] text-accent hover:underline"
-                >
-                  {labels.print}
-                </button>
-                <span className="text-[#888] text-[9px]">{labels.escHint}</span>
-                <a
-                  href={pdfHref}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="uppercase tracking-[0.14em] text-accent hover:underline"
-                >
-                  {labels.download}
-                </a>
-              </>
-            }
-          >
-            {children}
-          </DocSheetChrome>
+          <ViewTransition name={`doc-card-${slug}`} share="morph">
+            <DocSheetChrome
+              title={title}
+              subtitle={subtitle}
+              contact={contact}
+              titleMorphName={`doc-title-${slug}`}
+              actions={
+                <>
+                  <button
+                    type="button"
+                    onClick={() => window.print()}
+                    className="bg-none border-0 p-0 font-inherit cursor-pointer uppercase tracking-[0.14em] text-accent hover:underline"
+                  >
+                    {labels.print}
+                  </button>
+                  <span className="text-[#888] text-[9px]">{labels.escHint}</span>
+                  <a
+                    href={pdfHref}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="uppercase tracking-[0.14em] text-accent hover:underline"
+                  >
+                    {labels.download}
+                  </a>
+                </>
+              }
+            >
+              {children}
+            </DocSheetChrome>
+          </ViewTransition>
         </Dialog.Popup>
       </Dialog.Portal>
     </Dialog.Root>

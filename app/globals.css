@@ -118,6 +118,28 @@ a {
 }
 
 /* ──────────────────────────────────────────────────────────────
+ *  View transitions — card ↔ sheet morph
+ * ────────────────────────────────────────────────────────────── */
+::view-transition-group(.morph) {
+  animation-duration: 420ms;
+  animation-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+}
+::view-transition-old(.morph),
+::view-transition-new(.morph) {
+  animation-duration: 420ms;
+  animation-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+  mix-blend-mode: normal;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  ::view-transition-group(*),
+  ::view-transition-old(*),
+  ::view-transition-new(*) {
+    animation: none !important;
+  }
+}
+
+/* ──────────────────────────────────────────────────────────────
  *  .doc-prose — markdown innerHTML styled as document body.
  *  Kept in globals because remark emits bare HTML without class hooks.
  * ────────────────────────────────────────────────────────────── */

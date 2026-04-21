@@ -17,6 +17,7 @@ export default async function Page({
 
   return (
     <DocSheetModal
+      slug="privacy"
       title={portfolio.legal.privacy.sheetTitle}
       subtitle={portfolio.legal.privacy.sheetSubtitle}
       contact={portfolio.contact}

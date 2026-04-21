@@ -17,6 +17,7 @@ export default async function Page({
 
   return (
     <DocSheetModal
+      slug="imprint"
       title={portfolio.legal.imprint.sheetTitle}
       subtitle={portfolio.legal.imprint.sheetSubtitle}
       contact={portfolio.contact}
