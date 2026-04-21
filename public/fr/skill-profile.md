@@ -113,7 +113,7 @@ Relance et évolution du portail de réservation Weg.de / lastminute.com. Les va
 
 *Stack :* Next.js, React, Redux, Webpack, Jest, ES6, CSSNEXT, Node.js.
 
-### Franz Haniel & Cie. GmbH, Duisbourg — 2018, 2020
+### Franz Haniel & Cie. GmbH, Duisburg — 2018, 2020
 
 Histoire familiale numérique couvrant 350 ans d'histoire familiale et d'entreprise.
 

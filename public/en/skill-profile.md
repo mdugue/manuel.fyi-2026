@@ -17,7 +17,7 @@ Product engineer building user-facing, agent-friendly web products since 2008. D
 |                    |                                                                                            |
 | ------------------ | ------------------------------------------------------------------------------------------ |
 | **Agentic & AI**   | LLM-powered features, custom agents, evals, agent-friendly code layout, MCP & Agent Skills |
-| **Build**          | User-facing web products end to end — from first sketch to shipped, observable software    |
+| **Build**          | User-facing web products end-to-end — from first sketch to shipped, observable software    |
 | **Architect**      | End-to-end typesafety, iteration speed, resilience, e2e testing, CI/CD                     |
 | **Visualise**      | Information design for large datasets, signals, geographies and family structures          |
 | **Coach**          | Training, workshops, code reviews, stakeholder alignment across engineering and business   |
