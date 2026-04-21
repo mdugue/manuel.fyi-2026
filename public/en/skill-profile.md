@@ -21,13 +21,20 @@
 
 ## Projects
 
+### Fraunhofer Heinrich-Herz-Institut – since 2025
+
+Catalog for 5G Components. 
+
+Audited and designed architecture for rewrite. Focus on e2e typesafety, complexity reduction & iteration speed. 
+
+**Technologies**: Next.js, RSC, Drizzle ORM, postgreSQL, bun, playwright, agent skills, claude code, cursor
 
 ### Estino GmbH – since 2018
 
 B2B dashboards for engineering product development. Signal visualisation, entity management, agent design.
 Concept, UX, training & development.
 
-**Technologies**: Next.js, D3, Mapbox, DeckGL, GraphQL, Apollo, Playwright, Bun, Tailwind, shadcn/ui, Vercel AI SDK, SGLang
+**Technologies**: Next.js, D3, Mapbox, DeckGL, GraphQL, Apollo, Playwright, Bun, Tailwind, shadcn/ui, Vercel AI SDK, SGLang, SQLite Vector
 
 [estino.de](https://estino.de)
 
@@ -38,6 +45,8 @@ Business Trip management portal.
 Consulting, Teaching & Implementation: resilient architectures, automised quality assurance, complexity reduction, feature development
 
 **Technologies**: Claude Code, Cursor, Nuxt, Vue.js, TypeScript, Sentry, Playwright
+
+[https://www.barkhauseninstitut.org/](https://www.barkhauseninstitut.org)
 
 ### JoDDiD – 2022–2023
 
