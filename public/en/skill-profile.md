@@ -19,7 +19,19 @@
 | **Tools**                 | VS Code, JetBrains IntelliJ, Android Studio, Git, Webpack, Docker, ChatGPT           |
 | **Topics**                | User experience, performance, SEO, eCommerce, information visualisation, …           |
 
-## Career
+## Projects
+
+
+### Estino GmbH
+
+**Since 2018**
+
+B2B dashboards for engineering product development. Signal visualisation, entity management, agent design.
+Concept, UX, training & development.
+
+Technologies: Next.js, D3, Mapbox, DeckGL, GraphQL, Apollo, Playwright, Bun, Tailwind, shadcn/ui, Vercel AI SDK, SGLang
+
+[estino.de](https://estino.de)
 
 ### JoDDiD
 
@@ -55,17 +67,6 @@ Frontend lead for the intranet of Baselworld / Houruniverse.
 Development, training & consulting.
 
 [Mch Group](https://mch-group.com) · [Aperto](https://www.ibmix.de/)
-
-### Estino GmbH
-
-**Since 2018**
-
-B2B dashboard for digital product development, signal visualisation and fleet management.
-Concept, UX, training & development.
-
-Technologies: Next.js, React, D3, Mapbox, DeckGL, GraphQL, Apollo, Puppeteer, Jest, Playwright, ES6, Node.js, Tailwind, shadcn/ui, Vercel AI SDK
-
-[estino.de](https://estino.de)
 
 ### Franz Haniel & Cie. GmbH, Duisburg
 
