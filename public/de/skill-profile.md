@@ -75,6 +75,14 @@ B2B-Dashboards für die Entwicklung technischer Produkte: Signalvisualisierung, 
 
 [estino.de](https://estino.de)
 
+### Fioscope — 2024
+
+Dashboard-Prototyp für Live-Kamera-Streams aus laufenden Öfen, zusammen mit bildbasierten Metriken wie dem Schmelzfortschritt. Ein Blick ins Feuer — übersetzt in Zahlen, mit denen die Bedienung arbeiten kann.
+
+*Rolle:* Konzeption, UX, Prototyp-Entwicklung.
+
+[fioscope.de](https://www.fioscope.de)
+
 ### Wildstyle Network, Dresden — 2016–2017, 2023
 
 Beratung und Umsetzung von QA- und CI-Strategien für microservice-basierte Webanwendungen. Prozesse und Werkzeuge zur Messung der Softwarequalität etabliert, Qualitätsstandards definiert und automatisierte Deployments geliefert, auf die sich Teams verlassen können.

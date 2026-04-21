@@ -75,6 +75,14 @@ Tableaux de bord B2B pour le développement de produits techniques : visualisati
 
 [estino.de](https://estino.de)
 
+### Fioscope — 2024
+
+Prototype de tableau de bord pour des flux caméra en direct depuis l'intérieur de fours en fonctionnement, avec des métriques tirées des images comme l'avancement de la fusion. Un œil dans le feu — traduit en chiffres que l'opérateur peut lire.
+
+*Rôle :* Conception, UX, développement du prototype.
+
+[fioscope.de](https://www.fioscope.de)
+
 ### Wildstyle Network, Dresde — 2016–2017, 2023
 
 Conseil et mise en œuvre de stratégies QA et CI pour des applications web basées sur des microservices. Mise en place de processus et d'outils de mesure de la qualité logicielle, définition de standards et livraison de déploiements automatisés sur lesquels les équipes peuvent compter.
