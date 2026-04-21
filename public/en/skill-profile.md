@@ -22,20 +22,24 @@
 ## Projects
 
 
-### Estino GmbH
-
-**Since 2018**
+### Estino GmbH – since 2018
 
 B2B dashboards for engineering product development. Signal visualisation, entity management, agent design.
 Concept, UX, training & development.
 
-Technologies: Next.js, D3, Mapbox, DeckGL, GraphQL, Apollo, Playwright, Bun, Tailwind, shadcn/ui, Vercel AI SDK, SGLang
+**Technologies**: Next.js, D3, Mapbox, DeckGL, GraphQL, Apollo, Playwright, Bun, Tailwind, shadcn/ui, Vercel AI SDK, SGLang
 
 [estino.de](https://estino.de)
 
-### JoDDiD
+### Barkhausen Institut – since 2024
 
-**2022–2023**
+Business Trip management portal.
+
+Consulting, Teaching & Implementation: resilient architectures, automised quality assurance, complexity reduction, feature development
+
+**Technologies**: Claude Code, Cursor, Nuxt, Vue.js, TypeScript, Sentry, Playwright
+
+### JoDDiD – 2022–2023
 
 Digital exhibition "einfach gut gemacht – political education in Saxony".
 Concept, UX, training & development.
