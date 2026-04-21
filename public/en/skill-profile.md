@@ -75,6 +75,14 @@ B2B dashboards for engineering product development: signal visualisation, entity
 
 [estino.de](https://estino.de)
 
+### Fioscope — 2024
+
+Dashboard prototype for live camera streams from inside running furnaces, paired with image-derived metrics like melting progress. A window into the fire — translated into numbers the operator can read.
+
+*Role:* Concept, UX, prototype development.
+
+[fioscope.de](https://www.fioscope.de)
+
 ### Wildstyle Network, Dresden — 2016–2017, 2023
 
 Consulting and implementation of QA and CI strategies for microservice-based web applications. Set up processes and tools for measuring software quality, defined standards and delivered automated deployments teams could trust.
