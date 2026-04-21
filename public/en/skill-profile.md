@@ -23,9 +23,9 @@
 
 ### Fraunhofer Heinrich-Herz-Institut – since 2025
 
-Catalog for 5G Components. 
+Catalog for 5G Components with lifecycle management, fine grained authorization logic and multi faceted entity views. 
 
-Audited and designed architecture for rewrite. Focus on e2e typesafety, complexity reduction & iteration speed. 
+Audited and designed architecture for rewrite. Focus on e2e typesafety, complexity reduction & iteration speed. Optimized for agentic first access. 
 
 **Technologies**: Next.js, RSC, Drizzle ORM, postgreSQL, bun, playwright, agent skills, claude code, cursor
 
