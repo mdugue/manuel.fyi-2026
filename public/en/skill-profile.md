@@ -97,7 +97,7 @@ Concept and development of a digital family history covering 350 years of family
 Training IT and project-management staff in modern web development.
 Goal: learning techniques for prototyping, assessing feasibility and effort of existing and upcoming projects. Hands-on application with modern tooling.
 
-Topics: React.js, Node.js, UI frameworks, form handling, QA
+**Topics**: React.js, Node.js, UI frameworks, form handling, QA
 
 ### Wildstyle Network, Dresden – 2016–2017, 2023
 
@@ -150,6 +150,8 @@ Interactive movie for leading German technology companies targeting trade fairs 
 
 The app is designed as a high-resolution interactive HD film. Information is framed by rendered film loops; every interaction leads seamlessly into a new film.
 
+[avanga.de](https://www.avanga.de)
+
 ### Sandstein Neue Medien, Dresden – 2011–2013
 
 Development and detailed concept of virtual books for the museum terminals of the **Militärhistorisches Museum Dresden**. Permanent exhibition and special exhibition from November 2012. Requirement: an original three-dimensional depiction of extensive historical books, embedding into a client–server architecture, use of hardware acceleration and gesture-based interaction. Virtual books: coordination of development, testing and maintenance, software architecture design.
@@ -174,11 +176,15 @@ Design lead on the redesign of an intranet based on SAP Netweaver. Creating the 
 
 **Technologies**: SAP Netweaver, RFC, CSS
 
+[telekom-mms.com](https://www.telekom-mms.com/)
+
 ### Macro semantic visualisation, T-Systems MMS, Dresden – 2009
 
 Concept and development of an interactive corporate visualisation. The goal was to present over a thousand employees to help spot synergies, across several hundred working groups covering thousands of topics.
 
 **Technologies**: Flash, ActionScript, Atlassian Confluence
+
+[telekom-mms.com](https://www.telekom-mms.com/)
 
 ## Education
 
