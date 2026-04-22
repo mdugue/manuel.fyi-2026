@@ -42,27 +42,10 @@ export function DocSheetPage({
             </a>
           </>
         }
-        actions={
-          <>
-            <Link
-              className="text-accent uppercase tracking-[0.14em] hover:underline"
-              href={`/${lang}` as Route}
-            >
-              ← manuel.fyi
-            </Link>
-            <a
-              className="text-accent uppercase tracking-[0.14em] hover:underline"
-              href={pdfHref}
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              {modalLabels.download}
-            </a>
-          </>
-        }
         contact={contact}
         standalone
         subtitle={subtitle}
+        title={title}
       >
         {children}
       </DocSheetChrome>

@@ -22,10 +22,11 @@ export function SiteFooter({
     >
       <div className="grid grid-cols-[1.5fr_1fr_1fr_1fr] gap-8 pb-[60px] max-[520px]:grid-cols-1 max-[900px]:grid-cols-2">
         <h3 className="m-0 font-display text-[clamp(40px,6vw,84px)] italic leading-[0.95] tracking-[-0.02em] [&_em]:text-accent [&_em]:not-italic">
-          {footer.word.map((w, i) => (
+          {footer.word.map((w) => (
             <span
+              // biome-ignore lint/security/noDangerouslySetInnerHtml: trusted footer copy from i18n dictionaries
               dangerouslySetInnerHTML={{ __html: w }}
-              key={i}
+              key={w}
               style={{ display: "block" }}
             />
           ))}

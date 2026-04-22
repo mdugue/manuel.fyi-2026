@@ -8,6 +8,7 @@ import {
   Text,
   View,
 } from "@react-pdf/renderer";
+import type { Style } from "@react-pdf/types";
 import type { PhrasingContent, Root, RootContent } from "mdast";
 import { notFound } from "next/navigation";
 import type React from "react";
@@ -373,16 +374,18 @@ function renderBlock(
               <View key={ri} style={styles.tableRow}>
                 {row.children.map((cell, ci) => {
                   const align = node.align?.[ci] ?? undefined;
+                  let headerPart: Style = {};
+                  if (isHeader) {
+                    headerPart = headerIsEmpty
+                      ? styles.tableHeaderCellEmpty
+                      : styles.tableHeaderCell;
+                  }
                   return (
                     <Text
                       key={ci}
                       style={[
                         styles.tableCell,
-                        isHeader
-                          ? headerIsEmpty
-                            ? styles.tableHeaderCellEmpty
-                            : styles.tableHeaderCell
-                          : {},
+                        headerPart,
                         align ? { textAlign: align } : {},
                       ]}
                     >
@@ -415,7 +418,10 @@ function renderBlock(
   }
 }
 
-type DocMeta = { sheetTitle: string; sheetSubtitle: string };
+interface DocMeta {
+  sheetSubtitle: string;
+  sheetTitle: string;
+}
 
 function MarkdownDocument({
   tree,
@@ -472,12 +478,12 @@ function MarkdownDocument({
 
 export type LocalizedString = Record<Locale, string>;
 
-export type MarkdownPdfRouteConfig = {
-  slug: string;
-  filenameBase: string;
+export interface MarkdownPdfRouteConfig {
   author?: string;
+  filenameBase: string;
   getDocMeta: (dict: Dictionary) => DocMeta;
-};
+  slug: string;
+}
 
 export function createMarkdownPdfRoute(config: MarkdownPdfRouteConfig) {
   const { slug, filenameBase, author, getDocMeta } = config;

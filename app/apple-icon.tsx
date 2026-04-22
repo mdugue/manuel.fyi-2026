@@ -6,6 +6,9 @@ export const contentType = "image/png";
 const INK = "#2a241d";
 const PAPER = "#fbf8f1";
 
+const GOOGLE_FONTS_TRUETYPE_URL_RE =
+  /src:\s*url\((https:\/\/[^)]+)\)\s*format\(['"]?truetype['"]?\)/;
+
 async function loadGaramondBold() {
   const css = await fetch(
     "https://fonts.googleapis.com/css2?family=EB+Garamond:wght@700&text=MD",
@@ -15,9 +18,7 @@ async function loadGaramondBold() {
       },
     }
   ).then((r) => r.text());
-  const match = css.match(
-    /src:\s*url\((https:\/\/[^)]+)\)\s*format\(['"]?truetype['"]?\)/
-  );
+  const match = css.match(GOOGLE_FONTS_TRUETYPE_URL_RE);
   if (!match) {
     throw new Error("EB Garamond font URL not found");
   }

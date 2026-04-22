@@ -20,7 +20,7 @@ async function safeRead(
   }
 }
 
-export async function readCachedSelfPresentation(
+export function readCachedSelfPresentation(
   locale: Locale
 ): Promise<string | null> {
   return safeRead("self-presentation", `${locale}:${defaultAiModel}`);

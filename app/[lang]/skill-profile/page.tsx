@@ -60,6 +60,7 @@ export default async function Page({
       title={portfolio.docs.profile.sheetTitle}
     >
       <script
+        // biome-ignore lint/security/noDangerouslySetInnerHtml: Article JSON-LD is built from static metadata, not user input.
         dangerouslySetInnerHTML={{ __html: jsonLdString(articleJsonLd) }}
         type="application/ld+json"
       />

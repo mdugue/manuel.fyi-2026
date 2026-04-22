@@ -86,6 +86,7 @@ export default async function RootLayout({
     >
       <body>
         <script
+          // biome-ignore lint/security/noDangerouslySetInnerHtml: Person JSON-LD is built from static schema on the server.
           dangerouslySetInnerHTML={{ __html: jsonLdString(personJsonLd()) }}
           type="application/ld+json"
         />

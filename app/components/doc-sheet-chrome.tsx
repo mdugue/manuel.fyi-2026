@@ -1,13 +1,13 @@
 import { Fragment } from "react";
 
-export type DocSheetChromeProps = {
-  title: string;
-  subtitle: string;
-  contact: readonly string[];
+export interface DocSheetChromeProps {
   actions: React.ReactNode;
-  standalone?: boolean;
   children: React.ReactNode;
-};
+  contact: readonly string[];
+  standalone?: boolean;
+  subtitle: string;
+  title: string;
+}
 
 export function DocSheetChrome({
   title,
@@ -35,8 +35,8 @@ export function DocSheetChrome({
           </div>
         </div>
         <address className="text-right font-mono text-[#555] text-[9px] uppercase not-italic leading-[1.8] tracking-[0.14em]">
-          {contact.map((l, i) => (
-            <Fragment key={i}>
+          {contact.map((l) => (
+            <Fragment key={l}>
               <span>{l}</span>
               <br />
             </Fragment>

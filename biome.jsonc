@@ -7,5 +7,20 @@
   ],
   "files": {
     "includes": ["**", "!!**/.agents"]
-  }
+  },
+  "javascript": {
+    "globals": ["Bun"]
+  },
+  "overrides": [
+    {
+      "includes": ["**/app/components/markdown-pdf.tsx"],
+      "linter": {
+        "rules": {
+          "suspicious": {
+            "noArrayIndexKey": "off"
+          }
+        }
+      }
+    }
+  ]
 }

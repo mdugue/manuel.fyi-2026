@@ -5,12 +5,11 @@ import { useParams, useRouter } from "next/navigation";
 import { useCallback } from "react";
 import { DocSheetChrome } from "./doc-sheet-chrome";
 
-type Labels = {
+interface Labels {
   close: string;
   download: string;
-  print: string;
   escHint: string;
-};
+}
 
 export function DocSheetModal({
   title,
@@ -63,14 +62,6 @@ export function DocSheetModal({
           <DocSheetChrome
             actions={
               <>
-                <button
-                  className="cursor-pointer border-0 bg-none p-0 font-inherit text-accent uppercase tracking-[0.14em] hover:underline"
-                  onClick={() => window.print()}
-                  type="button"
-                >
-                  {labels.print}
-                </button>
-                <span className="text-[#888] text-[9px]">{labels.escHint}</span>
                 <a
                   className="text-accent uppercase tracking-[0.14em] hover:underline"
                   href={pdfHref}
@@ -79,30 +70,12 @@ export function DocSheetModal({
                 >
                   {labels.download}
                 </a>
-              </>
-            }
-            actions={
-              <>
-                <button
-                  className="cursor-pointer border-0 bg-none p-0 font-inherit text-accent uppercase tracking-[0.14em] hover:underline"
-                  onClick={() => window.print()}
-                  type="button"
-                >
-                  {labels.print}
-                </button>
                 <span className="text-[#888] text-[9px]">{labels.escHint}</span>
-                <a
-                  className="text-accent uppercase tracking-[0.14em] hover:underline"
-                  href={pdfHref}
-                  rel="noopener noreferrer"
-                  target="_blank"
-                >
-                  {labels.download}
-                </a>
               </>
             }
             contact={contact}
             subtitle={subtitle}
+            title={title}
           >
             {children}
           </DocSheetChrome>

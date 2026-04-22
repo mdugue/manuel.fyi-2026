@@ -25,13 +25,13 @@ export function languageAlternates(slug = "") {
   return { ...languages, "x-default": pageUrl(defaultLocale, slug) };
 }
 
-type SeoInput = {
+interface SeoInput {
+  description: string;
   locale: Locale;
   slug?: string;
-  title: string;
-  description: string;
   templateTitle?: boolean;
-};
+  title: string;
+}
 
 export function buildPageMetadata({
   locale,

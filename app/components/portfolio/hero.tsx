@@ -15,10 +15,11 @@ export function Hero({ hero }: { hero: Dictionary["portfolio"]["hero"] }) {
       </div>
 
       <h1 className="m-0 text-balance font-display font-normal text-[clamp(48px,8.5vw,120px)] leading-[0.96] tracking-[-0.02em] [&_em]:text-accent [&_em]:italic">
-        {hero.title.map((line, i) => (
+        {hero.title.map((line) => (
           <span
+            // biome-ignore lint/security/noDangerouslySetInnerHtml: trusted hero lines from i18n dictionaries (italic markup)
             dangerouslySetInnerHTML={{ __html: line }}
-            key={i}
+            key={line}
             style={{ display: "block" }}
           />
         ))}
@@ -29,10 +30,10 @@ export function Hero({ hero }: { hero: Dictionary["portfolio"]["hero"] }) {
           {hero.lede}
         </p>
         <div className="font-mono text-[12px] text-ink-soft leading-[1.9] tracking-[0.04em]">
-          {hero.facts.map(([k, v], i) => (
+          {hero.facts.map(([k, v]) => (
             <div
               className="flex gap-4 border-rule-soft border-t py-2 last:border-rule-soft last:border-b"
-              key={i}
+              key={k}
             >
               <span className="min-w-[88px] text-ink-faint">{k}</span>
               <span>{v}</span>

@@ -12,8 +12,10 @@ const LANG_LABELS: Record<Locale, string> = {
   es: "ES",
 };
 
+const LOCALE_PREFIX_RE = /^\/[a-z]{2}(?=\/|$)/;
+
 function swapLang(pathname: string, target: Locale): Route {
-  return pathname.replace(/^\/[a-z]{2}(?=\/|$)/, `/${target}`) as Route;
+  return pathname.replace(LOCALE_PREFIX_RE, `/${target}`) as Route;
 }
 
 const WORDMARK =
