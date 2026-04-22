@@ -17,6 +17,7 @@ export default async function Page({
 
   return (
     <DocSheetModal
+      slug="curriculum-vitae"
       title={portfolio.docs.cv.sheetTitle}
       subtitle={portfolio.docs.cv.sheetSubtitle}
       contact={portfolio.contact}

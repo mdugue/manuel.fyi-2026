@@ -1,4 +1,4 @@
-import { Fragment } from 'react'
+import { Fragment, ViewTransition } from 'react'
 
 export type DocSheetChromeProps = {
   title: string
@@ -6,6 +6,7 @@ export type DocSheetChromeProps = {
   contact: readonly string[]
   actions: React.ReactNode
   standalone?: boolean
+  titleMorphName?: string
   children: React.ReactNode
 }
 
@@ -15,6 +16,7 @@ export function DocSheetChrome({
   contact,
   actions,
   standalone = false,
+  titleMorphName,
   children,
 }: DocSheetChromeProps) {
   const sheetClass = [
@@ -45,9 +47,17 @@ export function DocSheetChrome({
       </header>
 
       <div className="mb-8">
-        <p className="font-display text-[46px] italic font-normal leading-[1.02] tracking-[-0.01em] m-0 mb-3 text-accent">
-          {title}
-        </p>
+        {titleMorphName ? (
+          <ViewTransition name={titleMorphName} share="morph">
+            <p className="font-display text-[46px] italic font-normal leading-[1.02] tracking-[-0.01em] m-0 mb-3 text-accent">
+              {title}
+            </p>
+          </ViewTransition>
+        ) : (
+          <p className="font-display text-[46px] italic font-normal leading-[1.02] tracking-[-0.01em] m-0 mb-3 text-accent">
+            {title}
+          </p>
+        )}
 
         <div className="font-display text-base text-[#555] italic">
           {subtitle}
