@@ -9,6 +9,7 @@ import { socialProofSchema } from '@/i18n/social-proof-schema'
 import { SectionHead } from './section-head'
 import { AiControls } from './ai-controls'
 import { useModelCycler } from './use-model-cycler'
+import { useAiCacheStatuses } from './use-ai-cache-statuses'
 
 const SLOTS = [0, 1, 2] as const
 
@@ -19,9 +20,14 @@ export function SocialProof({
   lang: Locale
   proof: Dictionary['portfolio']['proof']
 }) {
+  const { statuses, refresh } = useAiCacheStatuses('social-proof', lang)
+
   const { object, submit, isLoading, error } = useObject({
     api: '/api/social-proof',
     schema: socialProofSchema,
+    onFinish: () => {
+      refresh()
+    },
   })
 
   const onModelChange = useCallback(
@@ -31,7 +37,8 @@ export function SocialProof({
     [submit, lang],
   )
 
-  const { currentModel, position, regenerate } = useModelCycler(onModelChange)
+  const { currentModel, nextModel, position, regenerate } =
+    useModelCycler(onModelChange)
 
   const items = object?.testimonials
 
@@ -101,6 +108,13 @@ export function SocialProof({
             cycleLabel={proof.cycle}
             onRegenerate={regenerate}
             disabled={isLoading}
+            tooltip={{
+              nextModelLabel: nextModel.label,
+              nextModelExpiresAt:
+                statuses[nextModel.id]?.expiresAt ?? null,
+              locale: lang,
+              labels: proof.tooltip,
+            }}
           />
         </div>
       </div>

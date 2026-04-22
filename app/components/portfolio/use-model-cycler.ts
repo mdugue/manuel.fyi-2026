@@ -9,9 +9,13 @@ export function useModelCycler(onModelChange: (model: AiModelId) => void) {
   const [modelIndex, setModelIndex] = useState(0)
 
   const onChangeRef = useRef(onModelChange)
-  onChangeRef.current = onModelChange
+  useEffect(() => {
+    onChangeRef.current = onModelChange
+  })
 
   const currentModel = aiModels[modelIndex]!
+  const nextIndex = (modelIndex + 1) % MODEL_COUNT
+  const nextModel = aiModels[nextIndex]!
 
   const didInit = useRef(false)
   useEffect(() => {
@@ -21,12 +25,11 @@ export function useModelCycler(onModelChange: (model: AiModelId) => void) {
   }, [currentModel.id])
 
   const regenerate = useCallback(() => {
-    const next = (modelIndex + 1) % MODEL_COUNT
-    setModelIndex(next)
-    onChangeRef.current(aiModels[next]!.id)
-  }, [modelIndex])
+    setModelIndex(nextIndex)
+    onChangeRef.current(aiModels[nextIndex]!.id)
+  }, [nextIndex])
 
   const position = `${String(modelIndex + 1).padStart(2, '0')}/${String(MODEL_COUNT).padStart(2, '0')}`
 
-  return { currentModel, position, regenerate }
+  return { currentModel, nextModel, position, regenerate }
 }

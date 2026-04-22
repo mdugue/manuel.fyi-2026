@@ -26,7 +26,12 @@
       "sub": "Geschrieben von einem Modell, das meinen Lebenslauf sorgfältiger gelesen hat als die meisten Recruiter.",
       "tag": "Vom LLM erzeugt · leicht beaufsichtigt von Manuel",
       "cycle": "Neu generieren",
-      "errorRetry": "Das hat nicht geklappt. Nochmal versuchen?"
+      "errorRetry": "Das hat nicht geklappt. Nochmal versuchen?",
+      "tooltip": {
+        "nextModel": "Nächstes Modell",
+        "cached": "Aus dem Cache — frische Ausgabe",
+        "fresh": "Erzeugt eine frische Ausgabe"
+      }
     },
     "docs": {
       "label": "Dokumente",
@@ -65,7 +70,12 @@
       "sub": "Vollständig synthetisch, fake Stimmen, echte Projekte.",
       "cycle": "Neu generieren",
       "errorRetry": "Das hat nicht geklappt. Nochmal versuchen?",
-      "banner": "Alle obigen Zitate stammen von einem Sprachmodell. Sie wurden von keinem Kunden abgesegnet, denn es wurde keiner gefragt. Die Ähnlichkeit zu echtem Lob ist beabsichtigt."
+      "banner": "Alle obigen Zitate stammen von einem Sprachmodell. Sie wurden von keinem Kunden abgesegnet, denn es wurde keiner gefragt. Die Ähnlichkeit zu echtem Lob ist beabsichtigt.",
+      "tooltip": {
+        "nextModel": "Nächstes Modell",
+        "cached": "Aus dem Cache — frische Ausgabe",
+        "fresh": "Erzeugt eine frische Ausgabe"
+      }
     },
     "now": {
       "label": "Jetzt",
