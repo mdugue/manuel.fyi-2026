@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import { EB_Garamond, Inter, JetBrains_Mono } from 'next/font/google'
+import Script from 'next/script'
 import { hasLocale, localeParams, type Locale } from '@/i18n/config'
 import { getDictionary } from '@/i18n/dictionaries'
 import {
@@ -88,6 +89,15 @@ export default async function RootLayout({
         />
         {children}
         {modal}
+        {process.env.NEXT_PUBLIC_UMAMI_WEBSITE_ID && (
+          <Script
+            src="/stats/script.js"
+            data-website-id={process.env.NEXT_PUBLIC_UMAMI_WEBSITE_ID}
+            data-host-url="/stats"
+            data-performance="true"
+            strategy="afterInteractive"
+          />
+        )}
       </body>
     </html>
   )
