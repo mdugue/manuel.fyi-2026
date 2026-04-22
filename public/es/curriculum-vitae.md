@@ -2,14 +2,14 @@
 
 ## Perfil
 
-Ingeniero de producto — desde 2008 diseño y orquesto productos web orientados al usuario y pensados para convivir con agentes. Profundo en React, Next.js y TypeScript; amplio en conceptualización UX, arquitectura de la información, ingeniería AI agéntica y coaching. Me muevo mejor en la costura entre estrategia conceptual y orquestación concreta.
+Ingeniero de producto — desde 2008 diseño y orquesto productos web orientados al usuario y pensados para convivir con agentes. Profundo en Next.js y TypeScript; amplio en conceptualización UX, arquitectura de la información, ingeniería AI agéntica y coaching. Me muevo en la costura entre estrategia conceptual y orquestación concreta.
 
 ## Experiencia
 
 ### Ingeniero de producto independiente — desde 2008
 
-- Concebir y orquestar productos Next.js orientados al usuario y pensados para agentes, desde el primer boceto hasta el software entregado y observable.
-- Integrar funcionalidades LLM y agentes a medida dentro de los equipos de producto — MCP, Agent Skills, Vercel AI SDK.
+- Concebir y orquestar productos web orientados al usuario y pensados para agentes, desde el primer boceto hasta el software entregado y observable.
+- Integrar funcionalidades LLM y agentes a medida dentro de los equipos de producto — MCP, Agent Skills, AI SDK.
 - Formar a equipos de ingeniería en typesafety de extremo a extremo, calidad automatizada y flujos de trabajo AI-native.
 
 #### Colaboraciones destacadas
@@ -50,7 +50,7 @@ Asignaturas principales: matemáticas y ciencias sociales.
 
 |                     |                                                                                                                                    |
 | ------------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
-| **Agentic & IA**    | Funcionalidades LLM, agentes a medida, MCP, Agent Skills · Vercel AI SDK, Claude Code, Cursor, OpenRouter, SGLang                  |
+| **Agentic & IA**    | Funcionalidades LLM, agentes a medida, MCP, Agent Skills · AI SDK, Claude Code, Cursor, OpenRouter, SGLang                         |
 | **Arquitectura**    | Typesafety de extremo a extremo, código pensado para agentes, tests e2e, CI/CD · TypeScript, Next.js, React, Tailwind, Drizzle ORM |
 | **Visualización**   | Diseño de información para grandes volúmenes de datos, señales, mapas · D3, Mapbox GL, DeckGL, Three.js, WebGL                     |
 | **Runtime & datos** | Bun, Node.js, PostgreSQL, GraphQL, SQLite Vector                                                                                   |

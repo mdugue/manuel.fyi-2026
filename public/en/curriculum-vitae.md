@@ -2,14 +2,14 @@
 
 ## Profile
 
-Product engineer designing and orchestrating user-facing, agent-friendly web products since 2008. Deep in React, Next.js and TypeScript; broad across UX conceptualisation, information architecture, agentic AI engineering and coaching. Most at home where conceptual strategy meets hands-on orchestration.
+Product engineer designing and orchestrating user-facing, agent-friendly web products since 2008. Deep in Next.js and TypeScript; broad across UX conceptualisation, information architecture, agentic AI engineering and coaching. At home where conceptual strategy meets hands-on orchestration.
 
 ## Experience
 
 ### Independent Product Engineer — since 2008
 
-- Conceive and orchestrate user-facing, agent-friendly Next.js products, from first sketch to observable shipped software.
-- Weave LLM-powered features and custom agents into product teams, using MCP, Agent Skills and the Vercel AI SDK.
+- Conceive and orchestrate user-facing, agent-friendly web products, from first sketch to observable shipped software.
+- Weave LLM-powered features and custom agents into product teams, using MCP, Agent Skills and the AI SDK.
 - Coach engineering teams on end-to-end typesafety, automated quality, and AI-native workflows.
 
 #### Selected engagements
@@ -50,7 +50,7 @@ Advanced courses in mathematics and social sciences.
 
 |                    |                                                                                                                           |
 | ------------------ | ------------------------------------------------------------------------------------------------------------------------- |
-| **Agentic & AI**   | LLM features, custom agents, MCP, Agent Skills · Vercel AI SDK, Claude Code, Cursor, OpenRouter, SGLang                   |
+| **Agentic & AI**   | LLM features, custom agents, MCP, Agent Skills · AI SDK, Claude Code, Cursor, OpenRouter, SGLang                          |
 | **Architecture**   | End-to-end typesafety, agent-friendly code layout, e2e testing, CI/CD · TypeScript, Next.js, React, Tailwind, Drizzle ORM |
 | **Visualisation**  | Information design for large datasets, signals, geographies · D3, Mapbox GL, DeckGL, Three.js, WebGL                      |
 | **Runtime & data** | Bun, Node.js, PostgreSQL, GraphQL, SQLite Vector                                                                          |

@@ -2,14 +2,14 @@
 
 ## Profil
 
-Product Engineer — seit 2008 entwerfe und orchestriere ich nutzerzentrierte, agent-freundliche Web-Produkte. Tief in React, Next.js und TypeScript; breit aufgestellt in UX-Konzeption, Informationsarchitektur, Agentic AI Engineering und Coaching. Am wohlsten an der Naht zwischen konzeptioneller Strategie und praktischer Orchestrierung.
+Product Engineer — seit 2008 entwerfe und orchestriere ich nutzerzentrierte, agent-freundliche Web-Produkte. Tief in Next.js und TypeScript; breit aufgestellt in UX-Konzeption, Informationsarchitektur, Agentic AI Engineering und Coaching. Zu Hause an der Naht zwischen konzeptioneller Strategie und praktischer Orchestrierung.
 
 ## Erfahrung
 
 ### Selbstständiger Product Engineer — seit 2008
 
-- Konzeption und Orchestrierung nutzerzentrierter, agent-freundlicher Next.js-Produkte — von der ersten Skizze bis zur beobachtbaren, ausgelieferten Software.
-- Integration von LLM-Features und eigenen Agenten in Produktteams — mit MCP, Agent Skills und dem Vercel AI SDK.
+- Konzeption und Orchestrierung nutzerzentrierter, agent-freundlicher Web-Produkte — von der ersten Skizze bis zur beobachtbaren, ausgelieferten Software.
+- Integration von LLM-Features und eigenen Agenten in Produktteams — mit MCP, Agent Skills und dem AI SDK.
 - Coaching von Engineering-Teams zu durchgängiger Typsicherheit, automatisierter Qualität und AI-nativen Arbeitsabläufen.
 
 #### Ausgewählte Engagements
@@ -50,7 +50,7 @@ Leistungskurse Mathematik und Sozialwissenschaften.
 
 |                     |                                                                                                                                      |
 | ------------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
-| **Agentic & KI**    | LLM-Features, eigene Agenten, MCP, Agent Skills · Vercel AI SDK, Claude Code, Cursor, OpenRouter, SGLang                             |
+| **Agentic & KI**    | LLM-Features, eigene Agenten, MCP, Agent Skills · AI SDK, Claude Code, Cursor, OpenRouter, SGLang                                    |
 | **Architektur**     | Durchgängige Typsicherheit, agent-freundliche Codebasis, End-to-End-Tests, CI/CD · TypeScript, Next.js, React, Tailwind, Drizzle ORM |
 | **Visualisierung**  | Informationsdesign für große Datenmengen, Signale, Geografien · D3, Mapbox GL, DeckGL, Three.js, WebGL                               |
 | **Runtime & Daten** | Bun, Node.js, PostgreSQL, GraphQL, SQLite Vector                                                                                     |
