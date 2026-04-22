@@ -1,4 +1,4 @@
-@import 'tailwindcss';
+@import "tailwindcss";
 
 /* ──────────────────────────────────────────────────────────────
  *  Editorial (light) — default
@@ -196,8 +196,9 @@ a {
   margin: 2px 0;
   padding-left: 0.25rem;
 }
+/* Softer than body text; still tracks light/dark --ink */
 .doc-prose li::marker {
-  color: var(--color-ink);
+  color: var(--color-ink-faint);
 }
 .doc-prose hr {
   border: 0;
