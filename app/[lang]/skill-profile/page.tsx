@@ -49,8 +49,6 @@ export default async function Page({
     inLanguage: locale,
     author: { '@type': 'Person', name: 'Manuel Dugué', url: SITE },
     url: pageUrl(locale, 'skill-profile'),
-    datePublished: '2026-01-01',
-    dateModified: '2026-04-22',
   }
 
   return (

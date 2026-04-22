@@ -16,7 +16,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ) as Record<Locale, string>
     return locales.map((locale) => ({
       url: url(locale, slug),
-      lastModified: new Date(),
       changeFrequency: slug === '' ? ('weekly' as const) : ('monthly' as const),
       priority: slug === '' ? 1 : 0.7,
       alternates: {

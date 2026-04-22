@@ -51,7 +51,7 @@ export function SelfPresentationClient({
           aria-busy={isLoading}
           className="font-display text-[clamp(19px,1.75vw,24px)] leading-[1.55] text-ink m-0 min-h-[7em] whitespace-pre-line"
         >
-          {completion || initialText}
+          {completion ?? initialText}
           {isLoading && (
             <span
               aria-hidden="true"

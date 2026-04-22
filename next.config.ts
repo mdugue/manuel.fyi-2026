@@ -11,7 +11,7 @@ const nextConfig: NextConfig = {
   async redirects() {
     return [
       {
-        source: '/:lang(en|de)/cv',
+        source: '/:lang(en|de|fr|es)/cv',
         destination: '/:lang/curriculum-vitae',
         permanent: true,
       },
