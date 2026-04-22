@@ -1,7 +1,7 @@
 'use client'
 
 import { experimental_useObject as useObject } from '@ai-sdk/react'
-import { useCallback } from 'react'
+import { useCallback, useRef } from 'react'
 import type { Locale } from '@/i18n/config'
 import type { Dictionary } from '@/i18n/dictionaries'
 import type { AiModelId } from '@/i18n/ai-models'
@@ -20,18 +20,26 @@ export function SocialProof({
   lang: Locale
   proof: Dictionary['portfolio']['proof']
 }) {
-  const { statuses, refresh } = useAiCacheStatuses('social-proof', lang)
+  const { statuses, markGenerated } = useAiCacheStatuses(
+    'social-proof',
+    lang,
+  )
+
+  const requestedModelRef = useRef<AiModelId | null>(null)
 
   const { object, submit, isLoading, error } = useObject({
     api: '/api/social-proof',
     schema: socialProofSchema,
-    onFinish: () => {
-      refresh()
+    onFinish: ({ error: finishError }) => {
+      if (finishError) return
+      const model = requestedModelRef.current
+      if (model) markGenerated(model)
     },
   })
 
   const onModelChange = useCallback(
     (model: AiModelId) => {
+      requestedModelRef.current = model
       submit({ lang, model })
     },
     [submit, lang],

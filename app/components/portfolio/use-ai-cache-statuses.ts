@@ -3,6 +3,7 @@
 import { useCallback, useEffect, useState } from 'react'
 import type { Locale } from '@/i18n/config'
 import type { AiModelId } from '@/i18n/ai-models'
+import { AI_CACHE_TTL_MS } from '@/app/lib/ai-cache-shared'
 
 export type AiCacheClientStatus = {
   cachedAt: number
@@ -42,16 +43,32 @@ export function useAiCacheStatuses(
     const controller = new AbortController()
     void fetchCacheStatuses(namespace, lang, controller.signal).then(
       (data) => {
-        if (data) setStatuses(data)
+        if (!data) return
+        // Merge server snapshot under any newer local marks so we don't
+        // downgrade a just-generated model to stale server state.
+        setStatuses((prev) => {
+          const merged: AiCacheClientStatuses = { ...data }
+          for (const key of Object.keys(prev) as AiModelId[]) {
+            const local = prev[key]
+            const remote = merged[key]
+            if (local && (!remote || local.cachedAt > remote.cachedAt)) {
+              merged[key] = local
+            }
+          }
+          return merged
+        })
       },
     )
     return () => controller.abort()
   }, [namespace, lang])
 
-  const refresh = useCallback(async () => {
-    const data = await fetchCacheStatuses(namespace, lang)
-    if (data) setStatuses(data)
-  }, [namespace, lang])
+  const markGenerated = useCallback((model: AiModelId) => {
+    const cachedAt = Date.now()
+    setStatuses((prev) => ({
+      ...prev,
+      [model]: { cachedAt, expiresAt: cachedAt + AI_CACHE_TTL_MS },
+    }))
+  }, [])
 
-  return { statuses, refresh }
+  return { statuses, markGenerated }
 }

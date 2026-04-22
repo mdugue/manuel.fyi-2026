@@ -1,7 +1,7 @@
 'use client'
 
 import { useCompletion } from '@ai-sdk/react'
-import { useCallback } from 'react'
+import { useCallback, useRef } from 'react'
 import type { Locale } from '@/i18n/config'
 import type { Dictionary } from '@/i18n/dictionaries'
 import type { AiModelId } from '@/i18n/ai-models'
@@ -17,18 +17,25 @@ export function SelfPresentation({
   lang: Locale
   self: Dictionary['portfolio']['self']
 }) {
-  const { statuses, refresh } = useAiCacheStatuses('self-presentation', lang)
+  const { statuses, markGenerated } = useAiCacheStatuses(
+    'self-presentation',
+    lang,
+  )
+
+  const requestedModelRef = useRef<AiModelId | null>(null)
 
   const { completion, complete, isLoading, error } = useCompletion({
     api: '/api/self-presentation',
     streamProtocol: 'text',
     onFinish: () => {
-      refresh()
+      const model = requestedModelRef.current
+      if (model) markGenerated(model)
     },
   })
 
   const onModelChange = useCallback(
     (model: AiModelId) => {
+      requestedModelRef.current = model
       complete('', { body: { lang, model } })
     },
     [complete, lang],

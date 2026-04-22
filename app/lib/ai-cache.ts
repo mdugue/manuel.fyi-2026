@@ -2,9 +2,12 @@ import 'server-only'
 import { getCache } from '@vercel/functions'
 import type { Locale } from '@/i18n/config'
 import { aiModels, type AiModelId } from '@/i18n/ai-models'
+import {
+  AI_CACHE_TTL_MS,
+  AI_CACHE_TTL_SECONDS,
+} from '@/app/lib/ai-cache-shared'
 
-export const AI_CACHE_TTL_SECONDS = 60 * 60 * 24
-const AI_CACHE_TTL_MS = AI_CACHE_TTL_SECONDS * 1000
+export { AI_CACHE_TTL_SECONDS } from '@/app/lib/ai-cache-shared'
 
 export type AiCacheNamespace = 'self-presentation' | 'social-proof'
 
