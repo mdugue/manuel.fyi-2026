@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import type { Person, WithContext } from 'schema-dts'
 import { locales, defaultLocale, type Locale } from './config'
 
 export const SITE = 'https://manuel.fyi'
@@ -68,7 +69,7 @@ export function buildPageMetadata({
   }
 }
 
-export function personJsonLd() {
+export function personJsonLd(): WithContext<Person> {
   return {
     '@context': 'https://schema.org',
     '@type': 'Person',
@@ -81,4 +82,8 @@ export function personJsonLd() {
       'https://github.com/mdugue',
     ],
   }
+}
+
+export function jsonLdString(value: object): string {
+  return JSON.stringify(value).replace(/</g, '\\u003c')
 }

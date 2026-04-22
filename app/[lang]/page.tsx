@@ -3,10 +3,6 @@ import { notFound } from 'next/navigation'
 import { hasLocale, type Locale } from '@/i18n/config'
 import { getDictionary } from '@/i18n/dictionaries'
 import { SITE_NAME, buildPageMetadata } from '@/i18n/seo'
-import {
-  readCachedSelfPresentation,
-  readCachedSocialProof,
-} from '@/lib/ai-cache'
 import { Portfolio } from '@/app/components/portfolio/portfolio'
 
 export async function generateMetadata({
@@ -31,20 +27,10 @@ export default async function Home({
 }: {
   params: Promise<{ lang: string }>
 }) {
+  'use cache'
   const { lang } = await params
   if (!hasLocale(lang)) notFound()
   const locale: Locale = lang
-  const [dict, initialSelf, initialProof] = await Promise.all([
-    getDictionary(locale),
-    readCachedSelfPresentation(locale),
-    readCachedSocialProof(locale),
-  ])
-  return (
-    <Portfolio
-      lang={locale}
-      dict={dict.portfolio}
-      initialSelf={initialSelf}
-      initialProof={initialProof}
-    />
-  )
+  const dict = await getDictionary(locale)
+  return <Portfolio lang={locale} dict={dict.portfolio} />
 }

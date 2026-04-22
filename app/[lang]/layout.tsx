@@ -7,6 +7,7 @@ import {
   METADATA_BASE,
   SITE_NAME,
   buildPageMetadata,
+  jsonLdString,
   personJsonLd,
 } from '@/i18n/seo'
 import '../globals.css'
@@ -83,7 +84,7 @@ export default async function RootLayout({
       <body>
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(personJsonLd()) }}
+          dangerouslySetInnerHTML={{ __html: jsonLdString(personJsonLd()) }}
         />
         {children}
         {modal}

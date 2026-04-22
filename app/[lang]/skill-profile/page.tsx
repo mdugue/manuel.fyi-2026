@@ -1,8 +1,14 @@
 import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
+import type { Article, WithContext } from 'schema-dts'
 import { hasLocale, type Locale } from '@/i18n/config'
 import { getDictionary } from '@/i18n/dictionaries'
-import { SITE, buildPageMetadata, pageUrl } from '@/i18n/seo'
+import {
+  SITE,
+  buildPageMetadata,
+  jsonLdString,
+  pageUrl,
+} from '@/i18n/seo'
 import { MarkdownPage } from '@/app/components/markdown-page'
 import { DocSheetPage } from '@/app/components/doc-sheet-page'
 
@@ -35,7 +41,7 @@ export default async function Page({
   const dict = await getDictionary(locale)
   const portfolio = dict.portfolio
 
-  const articleJsonLd = {
+  const articleJsonLd: WithContext<Article> = {
     '@context': 'https://schema.org',
     '@type': 'Article',
     headline: portfolio.docs.profile.sheetTitle,
@@ -58,7 +64,7 @@ export default async function Page({
     >
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }}
+        dangerouslySetInnerHTML={{ __html: jsonLdString(articleJsonLd) }}
       />
       <MarkdownPage slug="skill-profile" lang={locale} />
     </DocSheetPage>
