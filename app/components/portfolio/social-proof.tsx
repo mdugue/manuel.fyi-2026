@@ -5,7 +5,10 @@ import { useCallback } from 'react'
 import type { Locale } from '@/i18n/config'
 import type { Dictionary } from '@/i18n/dictionaries'
 import type { AiModelId } from '@/i18n/ai-models'
-import { socialProofSchema } from '@/i18n/social-proof-schema'
+import {
+  socialProofSchema,
+  type SocialProofObject,
+} from '@/i18n/social-proof-schema'
 import { SectionHead } from './section-head'
 import { AiControls } from './ai-controls'
 import { useModelCycler } from './use-model-cycler'
@@ -15,9 +18,11 @@ const SLOTS = [0, 1, 2] as const
 export function SocialProof({
   lang,
   proof,
+  initialTestimonials,
 }: {
   lang: Locale
   proof: Dictionary['portfolio']['proof']
+  initialTestimonials: SocialProofObject['testimonials'] | null
 }) {
   const { object, submit, isLoading, error } = useObject({
     api: '/api/social-proof',
@@ -33,7 +38,7 @@ export function SocialProof({
 
   const { currentModel, position, regenerate } = useModelCycler(onModelChange)
 
-  const items = object?.testimonials
+  const items = object?.testimonials ?? initialTestimonials
 
   return (
     <section id="proof" className="py-[clamp(60px,9vw,130px)]">

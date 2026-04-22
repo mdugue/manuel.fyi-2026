@@ -12,13 +12,16 @@ import { useModelCycler } from './use-model-cycler'
 export function SelfPresentation({
   lang,
   self,
+  initialText,
 }: {
   lang: Locale
   self: Dictionary['portfolio']['self']
+  initialText: string | null
 }) {
   const { completion, complete, isLoading, error } = useCompletion({
     api: '/api/self-presentation',
     streamProtocol: 'text',
+    initialCompletion: initialText ?? '',
   })
 
   const onModelChange = useCallback(
@@ -48,7 +51,7 @@ export function SelfPresentation({
           aria-busy={isLoading}
           className="font-display text-[clamp(19px,1.75vw,24px)] leading-[1.55] text-ink m-0 min-h-[7em] whitespace-pre-line"
         >
-          {completion}
+          {completion || initialText}
           {isLoading && (
             <span
               aria-hidden="true"
