@@ -4,6 +4,8 @@
 
 Ingénieur produit — depuis 2008, je conçois et orchestre des produits web orientés utilisateur, pensés pour cohabiter avec des agents. Ancré en Next.js et TypeScript ; à l'aise en conceptualisation UX, architecture de l'information, AI engineering agentique et coaching. Je travaille à la couture entre stratégie conceptuelle et orchestration concrète.
 
+*Parmi les clients* lastminute.com · weg.de · T-Systems · Siemens · Fraunhofer HHI · Barkhausen Institut · MCH Group.
+
 ## Expérience
 
 ### Ingénieur produit indépendant — depuis 2008
@@ -14,15 +16,11 @@ Ingénieur produit — depuis 2008, je conçois et orchestre des produits web or
 
 #### Missions sélectionnées
 
-- **Estino GmbH — depuis 2018.** Tableaux de bord B2B pour l'ingénierie produit : visualisation de signaux, gestion d'entités, conception d'agents.
-- **weg.de — 2016–2020.** Refonte par composants du portail de réservation, accompagnement de l'équipe, implémentation des composants centraux.
+- **Estino GmbH — depuis 2018.** Tableaux de bord B2B pour l'ingénierie produit : visualisation de signaux, gestion d'entités, conception d'agents. Rythme de startup agile — contact direct avec les clients, écouter, prioriser, livrer les fonctionnalités qui méritent leur place.
+- **weg.de (groupe lastminute.com) — 2016–2020.** Refonte par composants du portail de réservation, implémentation des composants centraux, accompagnement de l'équipe. Piloté en freelance une équipe de dix ingénieurs et deux designers. Moins de bugs, taux de rebond et de churn en baisse, itération plus rapide — éléments préparatoires au rachat par lastminute.com.
 - **Barkhausen Institut — depuis 2024.** Architecture résiliente et assurance qualité automatisée pour le portail d'un institut de recherche.
 - **Arbres généalogiques — depuis 2020.** Plateforme pour quatre grandes dynasties allemandes ; complexité familiale réelle traitée avec soin.
-- **Fraunhofer Heinrich-Hertz-Institut — depuis 2025.** Catalogue agent-first pour composants 5G avec gestion du cycle de vie et autorisations fines.
-
-### Production audiovisuelle — Divers, 2008–2011
-
-Courts-métrages et contenus documentaires pour Dell Mexique, la chaire Vodafone (TU Dresde), le festival artistique Ostrale et T-Systems.
+- **Fraunhofer Heinrich-Hertz-Institut — depuis 2025.** Catalogue agent-first pour composants 5G avec gestion du cycle de vie et autorisations fines. Aux côtés de trois ingénieurs, trois designers et deux responsables, sur l'architecture, la livraison et l'alignement des parties prenantes.
 
 ## Formation
 
@@ -42,10 +40,6 @@ Courts-métrages et contenus documentaires pour Dell Mexique, la chaire Vodafone
 
 Soutenu par une bourse InWEnt / GIZ.
 
-### 2001 Abitur — Pestalozzi Gymnasium, Unna
-
-Spécialités mathématiques et sciences sociales.
-
 ## Compétences
 
 |                       |                                                                                                                              |
@@ -64,12 +58,6 @@ Spécialités mathématiques et sciences sociales.
 | **Courant**           | Anglais, Espagnol      |
 | **Notions**           | Portugais, Néerlandais |
 
-## Distinctions
+## À côté
 
-### 2020 — Contributeur GitHub Arctic Code Vault
-
-[archiveprogram.github.com](https://archiveprogram.github.com)
-
-### 2008 — 2ᵉ place, concours photo « Go-Out Studying »
-
-### 2007 — 1ᵉʳ prix, pitch logo à la chaire Microcomputer de la TU Dresde
+Autres angles, plutôt venus de saisons qui avaient encore du temps dedans : contributeur GitHub Arctic Code Vault (2020), 1ᵉʳ prix au pitch logo de la chaire Microcomputer de la TU Dresde (2007), 2ᵉ place au concours photo « Go-Out Studying » (2008). Plus tôt, courts-métrages pour Dell Mexique, la chaire Vodafone (TU Dresde), le festival artistique Ostrale et T-Systems (2008–2011).

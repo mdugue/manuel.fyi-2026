@@ -4,6 +4,8 @@
 
 Product engineer designing and orchestrating user-facing, agent-friendly web products since 2008. Deep in Next.js and TypeScript; broad across UX conceptualisation, information architecture, agentic AI engineering and coaching. At home where conceptual strategy meets hands-on orchestration.
 
+*Clients include* lastminute.com · weg.de · T-Systems · Siemens · Fraunhofer HHI · Barkhausen Institut · MCH Group.
+
 ## Experience
 
 ### Independent Product Engineer — since 2008
@@ -14,15 +16,11 @@ Product engineer designing and orchestrating user-facing, agent-friendly web pro
 
 #### Selected engagements
 
-- **Estino GmbH — since 2018.** B2B engineering dashboards, signal visualisation, agent design.
-- **weg.de — 2016–2020.** Component-based relaunch of the booking portal, team enablement, core implementation.
+- **Estino GmbH — since 2018.** B2B engineering dashboards, signal visualisation, agent design. Agile startup rhythm — direct contact with customers, listening, prioritising, shipping the features that earn their keep.
+- **weg.de (lastminute.com group) — 2016–2020.** Component-based relaunch of the booking portal, core implementation, team enablement. Steered a freelance team of ten engineers and two designers. Fewer bugs, lower bounce and churn, faster iteration — part of the groundwork for the acquisition by lastminute.com.
 - **Barkhausen Institut — since 2024.** Resilient architecture and automated quality for a research-institute portal.
 - **Ancestry trees — since 2020.** Family-tree platform for four German dynasties; real-family complexity handled with care.
-- **Fraunhofer Heinrich-Hertz-Institut — since 2025.** Agent-first 5G component catalogue with lifecycle management and fine-grained authorisation.
-
-### Film & Motion — Various, 2008–2011
-
-Short films and documentary content for Dell Mexico, the Vodafone Chair (TU Dresden), the Ostrale art festival and T-Systems.
+- **Fraunhofer Heinrich-Hertz-Institut — since 2025.** Agent-first 5G component catalogue with lifecycle management and fine-grained authorisation. Working alongside three engineers, three designers and two executives on architecture, delivery and stakeholder alignment.
 
 ## Education
 
@@ -42,10 +40,6 @@ Short films and documentary content for Dell Mexico, the Vodafone Chair (TU Dres
 
 Supported by an InWEnt / GIZ scholarship.
 
-### 2001 Abitur — Pestalozzi Gymnasium, Unna
-
-Advanced courses in mathematics and social sciences.
-
 ## Skills
 
 |                    |                                                                                                                           |
@@ -64,12 +58,6 @@ Advanced courses in mathematics and social sciences.
 | **Fluent**  | English, Spanish   |
 | **Working** | Portuguese, Dutch  |
 
-## Awards
+## Aside
 
-### 2020 — GitHub Arctic Code Vault Contributor
-
-[archiveprogram.github.com](https://archiveprogram.github.com)
-
-### 2008 — 2nd place, "Go-Out Studying" photo contest
-
-### 2007 — 1st prize, logo pitch at the Microcomputer Chair, TU Dresden
+Other angles, mostly from seasons with more time in them: GitHub Arctic Code Vault contributor (2020), 1st prize at a TU Dresden logo pitch (2007), 2nd place in the "Go-Out Studying" photo contest (2008). Earlier, short films for Dell Mexico, the Vodafone Chair (TU Dresden), the Ostrale art festival and T-Systems (2008–2011).

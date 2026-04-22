@@ -4,6 +4,8 @@
 
 Product Engineer — seit 2008 entwerfe und orchestriere ich nutzerzentrierte, agent-freundliche Web-Produkte. Tief in Next.js und TypeScript; breit aufgestellt in UX-Konzeption, Informationsarchitektur, Agentic AI Engineering und Coaching. Zu Hause an der Naht zwischen konzeptioneller Strategie und praktischer Orchestrierung.
 
+*Zu den Kunden zählen* lastminute.com · weg.de · T-Systems · Siemens · Fraunhofer HHI · Barkhausen Institut · MCH Group.
+
 ## Erfahrung
 
 ### Selbstständiger Product Engineer — seit 2008
@@ -14,15 +16,11 @@ Product Engineer — seit 2008 entwerfe und orchestriere ich nutzerzentrierte, a
 
 #### Ausgewählte Engagements
 
-- **Estino GmbH — seit 2018.** B2B-Dashboards für die Produktentwicklung: Signalvisualisierung, Entity Management, Agenten-Design.
-- **weg.de — 2016–2020.** Komponentenbasierter Relaunch des Buchungsportals, Team-Befähigung, Implementierung der Kernkomponenten.
+- **Estino GmbH — seit 2018.** B2B-Dashboards für die Produktentwicklung: Signalvisualisierung, Entity Management, Agenten-Design. Agile Startup-Taktung — direkter Kontakt zu Kunden, zuhören, priorisieren, die Features liefern, die ihren Platz verdienen.
+- **weg.de (lastminute.com-Gruppe) — 2016–2020.** Komponentenbasierter Relaunch des Buchungsportals, Implementierung der Kernkomponenten, Team-Befähigung. Geführt als Freelancer ein Team von zehn Entwicklern und zwei Designern. Weniger Bugs, niedrigere Bounce- und Churn-Raten, schnellere Iteration — Teil der Grundlage für die Übernahme durch lastminute.com.
 - **Barkhausen Institut — seit 2024.** Resiliente Architektur und automatisierte Qualitätssicherung für ein Forschungsinstituts-Portal.
 - **Ahnenbäume — seit 2020.** Familienbaum-Plattform für vier große deutsche Dynastien; echte Familienkomplexität sorgfältig abgebildet.
-- **Fraunhofer Heinrich-Hertz-Institut — seit 2025.** Agent-first-Katalog für 5G-Komponenten mit Lifecycle-Management und feingranularer Autorisierung.
-
-### Filmproduktion & Motion — Verschiedenes, 2008–2011
-
-Kurzfilme und Dokumentarformate, u. a. für Dell Mexiko, den Vodafone-Lehrstuhl (TU Dresden), das Kunstfestival Ostrale und T-Systems.
+- **Fraunhofer Heinrich-Hertz-Institut — seit 2025.** Agent-first-Katalog für 5G-Komponenten mit Lifecycle-Management und feingranularer Autorisierung. Gemeinsam mit drei Entwicklern, drei Designern und zwei Führungskräften an Architektur, Delivery und Stakeholder-Abstimmung.
 
 ## Ausbildung
 
@@ -42,10 +40,6 @@ Kurzfilme und Dokumentarformate, u. a. für Dell Mexiko, den Vodafone-Lehrstuhl 
 
 Unterstützt durch ein InWEnt / GIZ-Stipendium.
 
-### 2001 Abitur — Pestalozzi-Gymnasium, Unna
-
-Leistungskurse Mathematik und Sozialwissenschaften.
-
 ## Fähigkeiten
 
 |                     |                                                                                                                                      |
@@ -64,12 +58,6 @@ Leistungskurse Mathematik und Sozialwissenschaften.
 | **Fließend**        | Englisch, Spanisch             |
 | **Grundkenntnisse** | Portugiesisch, Niederländisch  |
 
-## Auszeichnungen
+## Am Rande
 
-### 2020 — GitHub Arctic Code Vault Contributor
-
-[archiveprogram.github.com](https://archiveprogram.github.com)
-
-### 2008 — 2. Platz, Fotowettbewerb „Go-Out Studying"
-
-### 2007 — 1. Preis, Logo-Pitch am Lehrstuhl Mikrocomputer der TU Dresden
+Andere Blickwinkel, meist aus Zeiten mit mehr Zeit darin: GitHub Arctic Code Vault Contributor (2020), 1. Preis beim Logo-Pitch am Lehrstuhl Mikrocomputer der TU Dresden (2007), 2. Platz beim Fotowettbewerb „Go-Out Studying" (2008). Früher Kurzfilme für Dell Mexiko, den Vodafone-Lehrstuhl (TU Dresden), das Kunstfestival Ostrale und T-Systems (2008–2011).
