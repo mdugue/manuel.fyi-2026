@@ -1,60 +1,75 @@
 # Curriculum Vitae
 
+## Profile
+
+Product engineer designing and orchestrating user-facing, agent-friendly web products since 2008. Deep in React, Next.js and TypeScript; broad across UX conceptualisation, information architecture, agentic AI engineering and coaching. Most at home where conceptual strategy meets hands-on orchestration.
+
 ## Experience
 
-### Consultant
+### Independent Product Engineer — since 2008
 
-#### **Freelance UI development, since 2008**
+- Conceive and orchestrate user-facing, agent-friendly Next.js products, from first sketch to observable shipped software.
+- Weave LLM-powered features and custom agents into product teams, using MCP, Agent Skills and the Vercel AI SDK.
+- Coach engineering teams on end-to-end typesafety, automated quality, and AI-native workflows.
 
-Architecture and development of large-scale web apps on the frontend side. Supporting international brands such as lastminute.com, weg.de, T-Systems and Siemens as well as local agencies. Focus on state-of-the-art technology and design.
+#### Selected engagements
 
-### Frontend Lead
+- **Estino GmbH — since 2018.** B2B engineering dashboards, signal visualisation, agent design.
+- **weg.de — 2016–2020.** Component-based relaunch of the booking portal, team enablement, core implementation.
+- **Barkhausen Institut — since 2024.** Resilient architecture and automated quality for a research-institute portal.
+- **Ancestry trees — since 2020.** Family-tree platform for four German dynasties; real-family complexity handled with care.
+- **Fraunhofer Heinrich-Hertz-Institut — since 2025.** Agent-first 5G component catalogue with lifecycle management and fine-grained authorisation.
 
-**Exelonix Asina, 2013–2014**
+### Film & Motion — Various, 2008–2011
 
-Android tablets for seniors: concept, design lead, project management, customer development.
-
-### Film production
-
-**Various, 2008–2011**
-
-Shooting and production of short films, for example for Dell Mexico, the Vodafone Chair at TU Dresden, a commercial for the Ostrale art festival, video tutorials for T-Systems.
-
-### Awards
-
-- GitHub Arctic Code Vault Contributor, 2020
-- 2nd place, "Go-Out Studying" photo contest, 2008
-- 1st prize, logo pitch at the Microcomputer Chair of TU Dresden, 2007
-
-### Other
-
-Assistant & photographer at Goethe-Institut Dresden.
-Volunteer work at Cocolores kindergarten.
+Short films and documentary content for Dell Mexico, the Vodafone Chair (TU Dresden), the Ostrale art festival and T-Systems.
 
 ## Education
 
-### 2011 Diploma in "Media Informatics" – TU Dresden, Germany
+### 2002–2011 Diploma in "Media Informatics" — Faculty of Computer Science, TU Dresden
 
-"Interactive two-dimensional representation of experiential time based on visited places"
-Final grade: 1 (approximate equivalent: A)
+*"Interactive two-dimensional representation of experiential time based on visited places"* — Final grade: 1 (≈ A).
 
-### 2009 Research project – TU Dresden, Germany
+### 2009 Research project — Faculty of Computer Science, TU Dresden
 
-"Materiality and Interaction", ungraded
+*"Materiality and Interaction"*, ungraded.
 
-### 2009 Minor in "Art & Design" – HfBK & TU Dresden, Germany
+### 2002–2009 Minor in "Art & Design" — HfBK & TU Dresden
 
-"Approaching contemporary ornamentics through experimental film"
-Final grade: 1.3 (approximate equivalent: A)
+*"Approaching contemporary ornamentics through experimental film"* — Final grade: 1.3 (≈ A).
 
-### 2007–2008 Internship – Cactus Film & Video, Mexico
+### 2007–2008 Internship — Cactus Film & Video, Mexico
 
-Supported by an Inwent / GIZ scholarship.
+Supported by an InWEnt / GIZ scholarship.
 
-## Personal skills
+### 2001 Abitur — Pestalozzi Gymnasium, Unna
 
-|               |                                                                                                                          |
-| ------------- | ------------------------------------------------------------------------------------------------------------------------ |
-| **Languages** | German (native), French (native), English (fluent), Spanish (fluent), Portuguese (basic), Dutch (basic)                  |
-| **IT**        | Web & software development, OO / component design, HTML, TypeScript, CSS3, React, Redux, Flux, Git, Node.js, Webpack, D3 |
-| **Software**  | Adobe Creative Cloud, Figma, Sketch, MS Office, OpenOffice                                                               |
+Advanced courses in mathematics and social sciences.
+
+## Skills
+
+|                    |                                                                                                                           |
+| ------------------ | ------------------------------------------------------------------------------------------------------------------------- |
+| **Agentic & AI**   | LLM features, custom agents, MCP, Agent Skills · Vercel AI SDK, Claude Code, Cursor, OpenRouter, SGLang                   |
+| **Architecture**   | End-to-end typesafety, agent-friendly code layout, e2e testing, CI/CD · TypeScript, Next.js, React, Tailwind, Drizzle ORM |
+| **Visualisation**  | Information design for large datasets, signals, geographies · D3, Mapbox GL, DeckGL, Three.js, WebGL                      |
+| **Runtime & data** | Bun, Node.js, PostgreSQL, GraphQL, SQLite Vector                                                                          |
+| **Coaching**       | Workshops, code reviews, stakeholder alignment across engineering and business                                            |
+
+## Languages
+
+|             |                    |
+| ----------- | ------------------ |
+| **Native**  | German, French     |
+| **Fluent**  | English, Spanish   |
+| **Working** | Portuguese, Dutch  |
+
+## Awards
+
+### 2020 — GitHub Arctic Code Vault Contributor
+
+[archiveprogram.github.com](https://archiveprogram.github.com)
+
+### 2008 — 2nd place, "Go-Out Studying" photo contest
+
+### 2007 — 1st prize, logo pitch at the Microcomputer Chair, TU Dresden
