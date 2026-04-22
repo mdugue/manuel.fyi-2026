@@ -3,64 +3,70 @@ import { ImageResponse } from 'next/og'
 export const size = { width: 32, height: 32 }
 export const contentType = 'image/png'
 
-const INK = '#1e1a15'
-const PAPER = '#f3ede1'
-const ACCENT = '#3d6bc7'
+const INK = '#2a241d'
+const PAPER = '#fbf8f1'
 
-export default function Icon() {
+async function loadGaramondBold() {
+  const css = await fetch(
+    'https://fonts.googleapis.com/css2?family=EB+Garamond:wght@700&text=MD',
+    {
+      headers: {
+        'User-Agent': 'Wget/1.14 (linux-gnu)',
+      },
+    },
+  ).then((r) => r.text())
+  const match = css.match(
+    /src:\s*url\((https:\/\/[^)]+)\)\s*format\(['"]?truetype['"]?\)/,
+  )
+  if (!match) throw new Error('EB Garamond font URL not found')
+  return fetch(match[1]).then((r) => r.arrayBuffer())
+}
+
+export default async function Icon() {
+  const fontData = await loadGaramondBold()
   return new ImageResponse(
     (
       <div
         style={{
           width: '100%',
           height: '100%',
-          background: INK,
-          color: PAPER,
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',
-          fontFamily: 'sans-serif',
-          fontWeight: 800,
-          fontSize: 20,
-          letterSpacing: '-0.06em',
-          position: 'relative',
+          background: 'transparent',
         }}
       >
         <div
           style={{
+            width: 32,
+            height: 32,
+            borderRadius: '50%',
+            background: PAPER,
+            color: INK,
             display: 'flex',
-            alignItems: 'baseline',
+            alignItems: 'center',
+            justifyContent: 'center',
+            fontFamily: 'EB Garamond',
+            fontWeight: 700,
+            fontSize: 19,
+            letterSpacing: '-0.02em',
             lineHeight: 1,
           }}
         >
-          <span>M</span>
-          <span
-            style={{
-              color: ACCENT,
-              fontFamily: 'serif',
-              fontStyle: 'italic',
-              fontWeight: 500,
-              fontSize: 22,
-              margin: '0 -1px',
-              transform: 'translateY(1px)',
-            }}
-          >
-            /
-          </span>
-          <span>D</span>
+          MD
         </div>
-        <div
-          style={{
-            position: 'absolute',
-            left: 4,
-            right: 4,
-            bottom: 3,
-            height: 1,
-            background: ACCENT,
-          }}
-        />
       </div>
     ),
-    { ...size },
+    {
+      ...size,
+      fonts: [
+        {
+          name: 'EB Garamond',
+          data: fontData,
+          style: 'normal',
+          weight: 700,
+        },
+      ],
+    },
   )
 }
