@@ -10,7 +10,7 @@ export function generateStaticParams() {
   return localeParams()
 }
 
-export default async function OpengraphImage({
+export default async function Image({
   params,
 }: {
   params: Promise<{ lang: string }>
@@ -18,7 +18,7 @@ export default async function OpengraphImage({
   const { lang } = await params
   const locale: Locale = hasLocale(lang) ? lang : 'en'
   const dict = await getDictionary(locale)
-  const lede = dict.portfolio.hero.lede
+  const { hero, spine } = dict.portfolio
 
   return new ImageResponse(
     (
@@ -51,13 +51,7 @@ export default async function OpengraphImage({
           <span>{locale.toUpperCase()}</span>
         </div>
 
-        <div
-          style={{
-            display: 'flex',
-            flexDirection: 'column',
-            gap: 32,
-          }}
-        >
+        <div style={{ display: 'flex', flexDirection: 'column', gap: 32 }}>
           <div
             style={{
               fontSize: 92,
@@ -78,7 +72,7 @@ export default async function OpengraphImage({
               fontStyle: 'italic',
             }}
           >
-            {lede}
+            {hero.lede}
           </div>
         </div>
 
@@ -96,11 +90,11 @@ export default async function OpengraphImage({
             paddingTop: 16,
           }}
         >
-          <span>freelance technologist · dresden</span>
+          <span>{spine}</span>
           <span style={{ color: '#B04A2A' }}>→ manuel.fyi</span>
         </div>
       </div>
     ),
-    size,
+    { ...size },
   )
 }
