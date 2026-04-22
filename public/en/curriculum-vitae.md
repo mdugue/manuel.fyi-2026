@@ -2,35 +2,24 @@
 
 ## Profile
 
-Product engineer designing and orchestrating user-facing, agent-friendly web products since 2008. Deep in Next.js and TypeScript; broad across UX conceptualisation, information architecture, agentic AI engineering and coaching.
+Product engineer designing and orchestrating user-facing, agent-friendly web products since 2008. Deep in web tech; broad across UX, information architecture, agentic AI engineering and coaching.
 
-Bringing LLM features and custom agents into product teams through MCP, Agent Skills and the AI SDK. Coaching engineering teams on end-to-end typesafety, automated quality and AI-native workflows. At home where conceptual strategy meets hands-on orchestration.
+Weaving LLM features and custom agents into product teams via MCP, Agent Skills and the AI SDK. Coaching teams on resilient end-to-end tech stacks, automated quality and AI-native workflows. At home where conceptual strategy meets hands-on orchestration.
 
 ## Selected engagements
 
-- **Estino GmbH — since 2018.** B2B engineering dashboards, signal visualisation, agent design. Agile startup rhythm: direct contact with customers, listening, prioritising, shipping the features that earn their keep.
-- **weg.de (lastminute.com group) — 2016–2020.** Component-based relaunch of the booking portal, core implementation, team enablement. Steered a freelance team of ten engineers and two designers. Fewer bugs, lower bounce and churn, faster iteration, part of the groundwork for the acquisition by lastminute.com.
-- **Barkhausen Institut — since 2024.** Resilient architecture and automated quality for a research-institute portal.
-- **Ancestry trees — since 2020.** Family-tree platform for four German dynasties; real-family complexity handled with care.
-- **Fraunhofer Heinrich-Hertz-Institut — since 2025.** Agent-first 5G component catalogue with lifecycle management and fine-grained authorisation. Working alongside three engineers, three designers and two executives on architecture, delivery and stakeholder alignment.
+- **Estino GmbH, since 2018.** B2B engineering dashboards, signal visualisation, agent design. Agile startup rhythm: direct contact with customers, listening, prioritising, shipping the features that earn their keep.
+- **weg.de (now lastminute.com group), 2016–2020.** Component-based relaunch of the booking portal, core implementation, team enablement. Steered a freelance team of ten engineers and two designers. Fewer bugs, lower bounce and churn, faster iteration, part of the groundwork for the acquisition by lastminute.com.
+- **Barkhausen Institut, since 2024.** Resilient architecture and automated quality for an internal research-institute portal.
+- **Ancestry trees, since 2020.** Family-tree platform for four German dynasties; real-family complexity handled with care.
+- **Fraunhofer Heinrich-Hertz-Institut, since 2025.** Agent-first 5G component catalogue with lifecycle management and fine-grained authorisation. Working alongside three engineers, three designers and two executives on architecture, delivery and stakeholder alignment.
 
 ## Education
 
-### 2002–2011 Diploma in "Media Informatics" at Faculty of Computer Science, TU Dresden
-
-*"Interactive two-dimensional representation of experiential time based on visited places"*, Final grade: 1 (≈ A).
-
-### 2009 Research project at Faculty of Computer Science, TU Dresden
-
-*"Materiality and Interaction"*, ungraded.
-
-### 2002–2009 Minor in "Art & Design" at HfBK & TU Dresden
-
-*"Approaching contemporary ornamentics through experimental film"*, Final grade: 1.3 (≈ A).
-
-### 2007–2008 Internship at Cactus Film & Video, Mexico
-
-Supported by an InWEnt / GIZ scholarship.
+- **2002–2011 Diploma in "Media Informatics" at Faculty of Computer Science, TU Dresden.** *"Interactive two-dimensional representation of experiential time based on visited places"*, Final grade: 1 (≈ A).
+- **2009 Research project at Faculty of Computer Science, TU Dresden.** *"Materiality and Interaction"*, ungraded.
+- **2002–2009 Minor in "Art & Design" at HfBK & TU Dresden.** *"Approaching contemporary ornamentics through experimental film"*, Final grade: 1.3 (≈ A).
+- **2007–2008 Internship at Cactus Film & Video, Mexico.** Supported by an InWEnt / GIZ scholarship.
 
 ## Skills
 
