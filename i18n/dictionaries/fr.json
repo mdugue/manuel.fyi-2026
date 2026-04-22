@@ -25,7 +25,12 @@
       "sub": "Rédigé par un modèle qui a lu mon CV avec plus d'attention que la plupart des recruteurs.",
       "tag": "Généré par LLM · hallucinations possibles",
       "cycle": "Régénérer",
-      "errorRetry": "Ça n'a pas marché. Réessayer ?"
+      "errorRetry": "Ça n'a pas marché. Réessayer ?",
+      "tooltip": {
+        "nextModel": "Modèle suivant",
+        "cached": "Résultat en cache — sortie fraîche",
+        "fresh": "Générera une sortie fraîche"
+      }
     },
     "docs": {
       "label": "Documents",
@@ -64,7 +69,12 @@
       "sub": "Entièrement synthétiques, produits à la demande. Plausibilité variable.",
       "cycle": "Régénérer",
       "errorRetry": "Ça n'a pas marché. Réessayer ?",
-      "banner": "Tous les témoignages ci-dessus ont été produits par un modèle de langage. Aucun client réel n'a été consulté. La ressemblance avec de vraies louanges est un trait, non une revendication."
+      "banner": "Tous les témoignages ci-dessus ont été produits par un modèle de langage. Aucun client réel n'a été consulté. La ressemblance avec de vraies louanges est un trait, non une revendication.",
+      "tooltip": {
+        "nextModel": "Modèle suivant",
+        "cached": "Résultat en cache — sortie fraîche",
+        "fresh": "Générera une sortie fraîche"
+      }
     },
     "now": {
       "label": "Maintenant",

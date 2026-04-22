@@ -1,13 +1,14 @@
 'use client'
 
 import { useCompletion } from '@ai-sdk/react'
-import { useCallback } from 'react'
+import { useCallback, useRef } from 'react'
 import type { Locale } from '@/i18n/config'
 import type { Dictionary } from '@/i18n/dictionaries'
 import type { AiModelId } from '@/i18n/ai-models'
 import { SectionHead } from './section-head'
 import { AiControls } from './ai-controls'
 import { useModelCycler } from './use-model-cycler'
+import { useAiCacheStatuses } from './use-ai-cache-statuses'
 
 export function SelfPresentation({
   lang,
@@ -16,19 +17,32 @@ export function SelfPresentation({
   lang: Locale
   self: Dictionary['portfolio']['self']
 }) {
+  const { statuses, markGenerated } = useAiCacheStatuses(
+    'self-presentation',
+    lang,
+  )
+
+  const requestedModelRef = useRef<AiModelId | null>(null)
+
   const { completion, complete, isLoading, error } = useCompletion({
     api: '/api/self-presentation',
     streamProtocol: 'text',
+    onFinish: () => {
+      const model = requestedModelRef.current
+      if (model) markGenerated(model)
+    },
   })
 
   const onModelChange = useCallback(
     (model: AiModelId) => {
+      requestedModelRef.current = model
       complete('', { body: { lang, model } })
     },
     [complete, lang],
   )
 
-  const { currentModel, position, regenerate } = useModelCycler(onModelChange)
+  const { currentModel, nextModel, position, regenerate } =
+    useModelCycler(onModelChange)
 
   return (
     <section id="self" className="py-[clamp(60px,9vw,130px)]">
@@ -73,6 +87,13 @@ export function SelfPresentation({
           cycleLabel={self.cycle}
           onRegenerate={regenerate}
           disabled={isLoading}
+          tooltip={{
+            nextModelLabel: nextModel.label,
+            nextModelExpiresAt:
+              statuses[nextModel.id]?.expiresAt ?? null,
+            locale: lang,
+            labels: self.tooltip,
+          }}
         />
       </div>
     </section>

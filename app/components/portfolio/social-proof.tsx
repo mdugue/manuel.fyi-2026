@@ -1,7 +1,7 @@
 'use client'
 
 import { experimental_useObject as useObject } from '@ai-sdk/react'
-import { useCallback } from 'react'
+import { useCallback, useRef } from 'react'
 import type { Locale } from '@/i18n/config'
 import type { Dictionary } from '@/i18n/dictionaries'
 import type { AiModelId } from '@/i18n/ai-models'
@@ -9,6 +9,7 @@ import { socialProofSchema } from '@/i18n/social-proof-schema'
 import { SectionHead } from './section-head'
 import { AiControls } from './ai-controls'
 import { useModelCycler } from './use-model-cycler'
+import { useAiCacheStatuses } from './use-ai-cache-statuses'
 
 const SLOTS = [0, 1, 2] as const
 
@@ -19,19 +20,33 @@ export function SocialProof({
   lang: Locale
   proof: Dictionary['portfolio']['proof']
 }) {
+  const { statuses, markGenerated } = useAiCacheStatuses(
+    'social-proof',
+    lang,
+  )
+
+  const requestedModelRef = useRef<AiModelId | null>(null)
+
   const { object, submit, isLoading, error } = useObject({
     api: '/api/social-proof',
     schema: socialProofSchema,
+    onFinish: ({ error: finishError }) => {
+      if (finishError) return
+      const model = requestedModelRef.current
+      if (model) markGenerated(model)
+    },
   })
 
   const onModelChange = useCallback(
     (model: AiModelId) => {
+      requestedModelRef.current = model
       submit({ lang, model })
     },
     [submit, lang],
   )
 
-  const { currentModel, position, regenerate } = useModelCycler(onModelChange)
+  const { currentModel, nextModel, position, regenerate } =
+    useModelCycler(onModelChange)
 
   const items = object?.testimonials
 
@@ -101,6 +116,13 @@ export function SocialProof({
             cycleLabel={proof.cycle}
             onRegenerate={regenerate}
             disabled={isLoading}
+            tooltip={{
+              nextModelLabel: nextModel.label,
+              nextModelExpiresAt:
+                statuses[nextModel.id]?.expiresAt ?? null,
+              locale: lang,
+              labels: proof.tooltip,
+            }}
           />
         </div>
       </div>
