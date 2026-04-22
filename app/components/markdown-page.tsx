@@ -1,35 +1,38 @@
-import { notFound } from 'next/navigation'
-import Markdown from 'react-markdown'
-import remarkGfm from 'remark-gfm'
-import type { Locale } from '@/i18n/config'
-import { readMarkdown } from './markdown-source'
+import { notFound } from "next/navigation";
+import Markdown from "react-markdown";
+import type { Locale } from "@/i18n/config";
+import { readMarkdown } from "./markdown-source";
 
 export async function MarkdownPage({
   slug,
   lang,
 }: {
-  slug: string
-  lang: Locale
+  slug: string;
+  lang: Locale;
 }) {
-  let raw: string
+  let raw: string;
   try {
-    raw = await readMarkdown(slug, lang)
+    raw = await readMarkdown(slug, lang);
   } catch {
-    notFound()
+    notFound();
   }
 
   return (
     <div className="doc-prose">
       <Markdown
-        remarkPlugins={[remarkGfm]}
         components={{
           a: ({ node: _node, ...props }) => (
-            <a {...props} target="_blank" rel="noopener noreferrer" />
+            <a {...props} rel="noopener noreferrer" target="_blank" />
+          ),
+        }}
+        components={{
+          a: ({ node: _node, ...props }) => (
+            <a {...props} rel="noopener noreferrer" target="_blank" />
           ),
         }}
       >
         {raw}
       </Markdown>
     </div>
-  )
+  );
 }
