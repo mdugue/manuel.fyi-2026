@@ -62,7 +62,6 @@ export default async function RootLayout({
             src="/stats/script.js"
             data-website-id={process.env.NEXT_PUBLIC_UMAMI_WEBSITE_ID}
             data-host-url="/stats"
-            data-domains="manuel.fyi"
             strategy="afterInteractive"
           />
         )}
