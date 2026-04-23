@@ -21,7 +21,7 @@
     "self": {
       "label": "Über mich",
       "heading": "Ein kurzes Selbstporträt",
-      "sub": "Auf Basis der formellen Dokumente. Dann einem Modell übergeben, mit der Bitte, nicht lyrisch zu werden.",
+      "sub": "Auf Basis der \"offiziellen Dokumente\". Dann einem Modell übergeben, mit der Bitte, nicht lyrisch zu werden.",
       "tag": "Vom LLM erzeugt · leicht beaufsichtigt von Manuel",
       "cycle": "Neu generieren",
       "errorRetry": "Das hat nicht geklappt. Nochmal versuchen?"
